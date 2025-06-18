@@ -1,0 +1,73 @@
+
+## 🔹 Technical Questionnaire – **BI Analyst Role**
+
+> **Instructions:** Please complete the questions below. Where applicable, include SQL queries, screenshots of dashboards (if allowed), or sample outputs.
+
+---
+
+### **Section A: SQL & Data Interpretation (BigQuery Compatible)**
+
+1. **SQL Task:**
+   You have a table `transactions` with the following schema:
+
+   * `user_id` (STRING)
+   * `transaction_date` (DATE)
+   * `amount` (FLOAT64)
+   * `merchant_name` (STRING)
+
+   **Write a SQL query to get the total amount spent by each user in the last 3 months, grouped by merchant.** Only include users who have transacted more than 3 times in this period.
+	
+	Please refer to bi-assesment_1 Section A-1.sql
+  
+  
+2. **SQL Analysis:**
+   Based on your query results above, how would you identify the top 3 merchants by revenue for each month?
+
+---Calculate monthly revenue, rank merchant by revenue and filter top 3 only
+
+	Please refer to bi-assesment_1 Section A-2.sql	
+
+
+### **Section B: Dashboarding & BI Tools**
+
+3. **Dashboard Task:**
+   Imagine your stakeholder wants to understand how customer engagement varies across merchants and weekdays.
+
+   * What charts would you use?
+   > Stacked bar chart. column breakdown is by weekdays and detail breakdown by merchant
+   
+   * What filters or drill-downs would you provide?
+   >can add filter by merchants for the stakeholders to filter the targeted merchants only.
+   
+   * Describe how you would approach building this in Tableau or Redash.
+	> make sure these fiels are available: transaction date, merchant name/ merchant id/ amount spend
+	> create calculated field to extract weekdays only
+	> create a stacked barchart with weekdays as column and amount spend as row. breakdown by color, use merchant name or merchant id field
+	
+4. **KPI Design:**
+   A marketing team wants to measure the success of a new campaign.
+
+   * What KPIs would you recommend tracking?
+   1. Conversion rates
+   2. Number of engangement
+   
+   * How would you attribute changes in performance to the campaign?
+	> define by segmentation. Can create group for age group, location.
+---
+
+### **Section C: Case Question**
+
+5. **Business Insight Case:**
+   You observe a 20% drop in redemption rates for a loyalty program this month.
+
+   * What steps would you take to investigate this?
+   > check if there is any changes in offered programs. 
+   > breakdwon the redemption rate by segment, so that will know which segment was impacted.
+   
+   * What kinds of data would you look at?
+   > redemption rates
+   > rewards details
+   > customer engagement data
+
+---
+

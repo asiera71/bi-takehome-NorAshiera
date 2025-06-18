@@ -1,0 +1,80 @@
+
+## 🔵 Case Study: **Business Intelligence Analyst**
+
+### 📝 Objective:
+
+Evaluate your ability to analyze data, generate business insights, and present findings in a way that's actionable and easy to understand by stakeholders.
+
+---
+
+### 📂 Case Study: Merchant Performance Analysis
+
+BonusLink partners with multiple merchants, and management is keen to evaluate which merchants are underperforming or overperforming in terms of customer engagement and transaction volume.
+
+**You are provided with the following mock datasets** (CSV or SQL-compatible):
+
+* `transactions.csv` — list of transactions with merchant, member ID, timestamp, and spend amount
+* `members.csv` — member ID, signup date, and tier
+* `merchants.csv` — merchant ID, category, location, and join date
+
+---
+
+### 🧠 Task:
+
+1. **Data Cleaning & Exploration**
+
+   * Perform basic EDA (Exploratory Data Analysis)
+   * Identify any data quality issues or assumptions
+
+2. **Merchant Performance Metrics**
+
+   * Define and calculate relevant KPIs for merchant performance (e.g., number of active members, avg spend per member, retention rate)
+    - Total spend by merchant and average spend per member
+   * Identify top and bottom merchants using your metrics
+	- By looking at the average spend by member 
+	 Top 3 :
+	 1. Merchant 14 (RM56.40)
+	 2. Merchant 20 (RM53.40)
+	 3. Merchant 18 (RM53.36)
+	 
+	 Bottom 3:
+	 1. Merchant 9 (RM43.60)
+	 2. Merchant 17 (RM46.55)
+	 3. Merchant 19 (RM46.66)
+	
+	
+	3. **Insights & Recommendations**
+
+   * Summarize key business insights
+    - Merchants with higher Spend per Customer are doing well in terms of customer retention and pricing strategy. 
+	- If a merchant has a low Spend per Customer, they might not be maximizing revenue from each customer.
+   * Recommend what actions should be taken for underperforming merchants
+    - improve customer engagement:
+		> Loyalty Programs: Introduce a loyalty program that encourages repeat purchases. For example, points systems, discounts after a certain number of purchases, or exclusive offers for returning customers.
+		> Personalized Marketing: Use customer data to send personalized offers based on their purchase history. 
+
+4. **Dashboard/Visualization**
+
+   * Build a simple dashboard to communicate your findings (in Tableau Public or screenshots if using other tools)
+   * Include filters or interactive components if applicable
+  > Please use this link to view the dashboards:
+  https://lookerstudio.google.com/reporting/b3ea63c4-9a07-4eef-95f3-4f960549cadb
+---
+
+### 🚀 Submission Instructions:
+
+1. Create a **GitHub repository** with:
+
+   * Your SQL queries, Python notebooks (if any), and outputs
+   * A `README.md` summarizing your approach and insights
+   * Screenshots or links to Tableau Public dashboards
+   * Any assumptions or limitations
+
+2. Name the repo: `bi-takehome-[yourname]`
+
+3. Share the GitHub repo link with anusia@bonuslink.com.my
+
+> ✅ Bonus: Use Tableau Public and link your dashboard in the README
+
+---
+
